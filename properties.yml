@@ -1,0 +1,21 @@
+---
+
+192.168.56.21:
+  :roles:
+    - common
+    - web
+  :networks:
+    - device_id: 0
+      mac_address: A6:A7:A3:7D:37:10
+      ip_address: 192.168.56.21
+  :default_gateway: 192.168.56.1
+
+192.168.56.22:
+  :roles:
+    - common
+    - db
+  :networks:
+    - device_id: 0
+      mac_address: A6:A7:A3:7D:37:01
+      ip_address: 192.168.56.22
+  :default_gateway: 192.168.56.1
