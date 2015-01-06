@@ -6,9 +6,7 @@ require 'pathname'
 require 'net/ssh'
 require 'yaml'
 
-include Serverspec::Helper::Ssh
-include Serverspec::Helper::DetectOS
-include Serverspec::Helper::Properties
+set :backend, :exec
 
 properties = YAML.load_file('properties.yml')
 
