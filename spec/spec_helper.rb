@@ -16,7 +16,7 @@ RSpec.configure do |c|
   c.host  = ENV['TARGET_HOST']
   set_property properties[c.host]
   options = Net::SSH::Config.for(c.host)
-  user    = 'root'
+  user    = 'vagrant'
   c.ssh   = Net::SSH.start(c.host, user, options)
   c.os    = backend.check_os
 end
