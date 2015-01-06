@@ -16,5 +16,4 @@ RSpec.configure do |c|
   options = Net::SSH::Config.for(c.host)
   user    = 'vagrant'
   c.ssh   = Net::SSH.start(c.host, user, options)
-  c.os    = backend.check_os
 end
